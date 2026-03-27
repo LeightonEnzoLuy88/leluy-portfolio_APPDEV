@@ -1,0 +1,1030 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    padding: 0 4rem;
+    gap: 2rem;
+}
+
+.text {
+    font-size: 46px;
+    color: rgb(0, 0, 0);
+    margin-left: 120px;
+    opacity: 0;
+    animation: fadeSlideLeft 1.5s ease forwards;
+    flex: 1;
+}
+
+.img1 {
+    background: rgb(78, 15, 15);
+    border-radius: 10em;
+    padding: 120px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.img1 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.img1 img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeSlideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    background: rgb(243, 241, 241);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav-links h1 {
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links li {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.about-me {
+    height: auto;
+    min-height: 90vh;
+    background-color: #810D0D;
+    justify-content: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.about-me h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 20px;
+    padding-top: 60px;
+}
+
+.img2 img {
+    width: 500px;
+    border-radius: 2.5rem;
+}
+
+.img2 {
+    margin-left: auto;
+    padding: 60px;
+    background: #5e0202;
+    border-radius: 2.5rem;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.text-p1 {
+    background: #5e0202;
+    border-radius: 2.5rem;
+    color: white;
+    font-size: 25px;
+    padding: 60px;
+    max-width: 600px;
+}
+
+.Education {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f5f5f5;
+}
+
+.Education h1 {
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.schools-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.school-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: white;
+    padding: 60px 50px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    width: 400px;
+    min-height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.school-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.699);
+}
+
+.img-dchs,
+.img-addu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-dchs img,
+.img-addu img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.text-dchs,
+.text-addu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.text-dchs h2,
+.text-addu h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.text-dchs p,
+.text-addu p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.Recent-Projects {
+    background: #4F0D81;
+    color: white;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.Recent-Projects h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.talaan-img img,
+.img-kicksly img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.talaan-img,
+.img-kicksly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: #9a45db;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.288);
+    width: 450px;
+    min-height: 550px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.575);
+}
+
+.project-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tech {
+    padding: 80px 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
+    background:#0D3281 ;
+
+}
+
+.tech h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+
+.tech h1:after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #e9e9e9, #ffffff);
+    border-radius: 4px;
+}
+
+.tech-slider-container {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.tech-carousel {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.tech-group {
+    display: flex;
+    gap: 2rem;
+    animation: techSpin 20s linear infinite;
+    flex-shrink: 0;
+}
+
+.tech-card {
+    flex: 0 0 140px;
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tech-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover img {
+    transform: scale(1.1);
+}
+
+.tech-card p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+@keyframes techSpin {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.tech-carousel:hover .tech-group {
+    animation-play-state: paused;
+}
+
+.skills-section {
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    min-width: 200px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    max-width: 250px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card h3 {
+    font-size: 1.3rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.skill-card p {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.contacts-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 60px 2rem;
+    text-align: center;
+}
+
+.contacts-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.contacts-section h1:after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: white;
+    border-radius: 4px;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.contact-card p {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+.contact-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.contact-card.facebook:hover {
+    background: #1877f2;
+}
+
+.contact-card.facebook:hover h3,
+.contact-card.facebook:hover p {
+    color: white;
+}
+
+.contact-card.github:hover {
+    background: #333;
+}
+
+.contact-card.github:hover h3,
+.contact-card.github:hover p {
+    color: white;
+}
+
+.contact-card.instagram:hover {
+    background: #e4405f;
+}
+
+.contact-card.instagram:hover h3,
+.contact-card.instagram:hover p {
+    color: white;
+}
+
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .landing {
+        padding: 0 2rem;
+    }
+    
+    .text {
+        font-size: 38px;
+        margin-left: 60px;
+    }
+    
+    .img1 {
+        width: 450px;
+        height: 450px;
+        padding: 100px;
+    }
+    
+    .img1 img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .landing {
+        flex-direction: column;
+        height: auto;
+        padding: 80px 2rem;
+        gap: 3rem;
+    }
+
+    .text {
+        font-size: 36px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .img1 {
+        width: 400px;
+        height: 400px;
+        padding: 80px;
+    }
+
+    .img1 img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .nav-links h1 {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .about-me {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .p1 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .img2 {
+        margin-left: 0;
+        padding: 40px;
+    }
+
+    .img2 img {
+        width: 350px;
+    }
+
+    .text-p1 {
+        padding: 40px;
+        font-size: 20px;
+        max-width: 500px;
+    }
+
+    .school-card {
+        width: 350px;
+        padding: 40px 30px;
+        min-height: 450px;
+    }
+
+    .project-card {
+        width: 380px;
+        min-height: 500px;
+        padding: 30px 25px;
+    }
+
+    .project-card h1 {
+        font-size: 1.5rem;
+    }
+
+    .tech h1 {
+        font-size: 2.5rem;
+    }
+
+    .tech-card {
+        flex: 0 0 120px;
+        padding: 1.2rem 0.8rem;
+    }
+
+    .tech-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-card p {
+        font-size: 0.8rem;
+    }
+
+    .tech-group {
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        min-width: 180px;
+        padding: 1.2rem 1.5rem;
+    }
+
+    .contacts-section h1 {
+        font-size: 2.3rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing {
+        padding: 60px 1.5rem;
+        gap: 2rem;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+
+    .text h3 {
+        font-size: 1.3rem;
+    }
+
+    .img1 {
+        width: 320px;
+        height: 320px;
+        padding: 60px;
+    }
+
+    .img1 img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links h1 {
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .nav-links li {
+        font-size: 18px;
+    }
+
+    .about-me h1 {
+        font-size: 2rem;
+        padding-top: 40px;
+    }
+
+    .img2 {
+        padding: 30px;
+    }
+
+    .img2 img {
+        width: 280px;
+    }
+
+    .text-p1 {
+        padding: 30px;
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    .Education h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .schools-container {
+        gap: 40px;
+    }
+
+    .school-card {
+        width: 300px;
+        padding: 30px 20px;
+        min-height: 400px;
+    }
+
+    .img-dchs img,
+    .img-addu img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text-dchs h2,
+    .text-addu h2 {
+        font-size: 1.4rem;
+    }
+
+    .text-dchs p,
+    .text-addu p {
+        font-size: 1rem;
+    }
+
+    .Recent-Projects h1 {
+        font-size: 2rem;
+    }
+
+    .project-container {
+        gap: 30px;
+    }
+
+    .project-card {
+        width: 320px;
+        min-height: 450px;
+        padding: 25px 20px;
+    }
+
+    .project-card h1 {
+        font-size: 1.3rem;
+    }
+
+    .talaan-img img,
+    .img-kicksly img {
+        max-width: 280px;
+    }
+
+    .tech {
+        padding: 50px 1rem;
+    }
+
+    .tech h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .tech-card {
+        flex: 0 0 100px;
+        padding: 1rem 0.5rem;
+    }
+
+    .tech-card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech-card p {
+        font-size: 0.7rem;
+    }
+
+    .tech-group {
+        gap: 1rem;
+    }
+
+    .skills-section {
+        margin-bottom: 2rem;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .contacts-section {
+        padding: 40px 1rem;
+    }
+
+    .contacts-section h1 {
+        font-size: 2rem;
+    }
+
+    .contacts-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 250px;
+        padding: 1.2rem;
+    }
+
+    .contact-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing {
+        padding: 40px 1rem;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .text h3 {
+        font-size: 1.1rem;
+    }
+
+    .img1 {
+        width: 260px;
+        height: 260px;
+        padding: 40px;
+    }
+
+    .img1 img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .nav-links li {
+        font-size: 16px;
+    }
+
+    .about-me h1 {
+        font-size: 1.8rem;
+    }
+
+    .img2 {
+        padding: 20px;
+    }
+
+    .img2 img {
+        width: 220px;
+    }
+
+    .text-p1 {
+        padding: 20px;
+        font-size: 16px;
+        max-width: 320px;
+    }
+
+    .Education h1 {
+        font-size: 1.6rem;
+    }
+
+    .school-card {
+        width: 280px;
+        padding: 25px 15px;
+        min-height: 350px;
+    }
+
+    .img-dchs img,
+    .img-addu img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .text-dchs h2,
+    .text-addu h2 {
+        font-size: 1.2rem;
+    }
+
+    .Recent-Projects h1 {
+        font-size: 1.6rem;
+    }
+
+    .project-card {
+        width: 280px;
+        min-height: 400px;
+        padding: 20px 15px;
+    }
+
+    .project-card h1 {
+        font-size: 1.1rem;
+    }
+
+    .talaan-img img,
+    .img-kicksly img {
+        max-width: 240px;
+    }
+
+    .text-pro1 p,
+    .text-pro2 p {
+        font-size: 0.9rem;
+    }
+
+    .tech h1 {
+        font-size: 1.6rem;
+    }
+
+    .tech-card {
+        flex: 0 0 85px;
+        padding: 0.8rem 0.3rem;
+    }
+
+    .tech-card img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .tech-card p {
+        font-size: 0.65rem;
+    }
+
+    .skill-card {
+        max-width: 250px;
+        padding: 1rem;
+    }
+
+    .skill-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .skill-icon {
+        font-size: 2rem;
+    }
+
+    .contacts-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .contact-card {
+        max-width: 220px;
+        padding: 1rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
